@@ -12,294 +12,520 @@
 
 <body>
     <div class="container">
-        <video class="back-vid" autoplay muted loop playsinline src="video/galaxy.mp4" type="video/mp4"></video>
+        <div class="preloader">
+            <div class="spinner"></div>
+        </div>
 
+        <video class="back-vid" autoplay muted loop playsinline preload="auto">
+            <source src="video/galaxy-optimized.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
 
-        <header>
-            <div class="left">
-                <img src="/images/JZR Codes white.png" alt="logo" />
+        <header class="header">
+            <div class="logo-container">
+                <img src="/images/JZR Codes white.png" alt="logo" class="logo" />
             </div>
 
-            <div class="hamburger">
+            <button class="hamburger" aria-label="Menu" aria-expanded="false">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
 
             <nav class="nav-menu">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
                 </ul>
-                <div class="box-icons">
-                    <a href=""><i class='bx bxl-youtube'></i></a>
-                    <a href="https://github.com/jzr786?tab=repositories"><i class='bx bxl-github'></i></a>
-                    <a href=""><i class='bx bxl-linkedin'></i></a>
+                <div class="social-icons">
+                    <a target="_blank" href="https://www.youtube.com/@juzerratlam786" aria-label="YouTube"><i
+                            class='bx bxl-youtube'></i></a>
+                    <a target="_blank" href="https://github.com/jzr786?tab=repositories" aria-label="GitHub"><i
+                            class='bx bxl-github'></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/juzerratlam/" aria-label="LinkedIn"><i
+                            class='bx bxl-linkedin'></i></a>
                 </div>
             </nav>
         </header>
 
-        <!-- <div class="blackhole-box">
-            <video autoplay muted loop playsinline src="video/blackhole-3.mp4" type="video/mp4"></video>
-        </div> -->
 
         <section class="hero">
-            <div class="hero-info">
-                <div class="hero-info-title">
-                    <i class="bx bxl bxl-sketch"></i>
-                    Full-Stack Developer Portfolio
+            <div class="hero-content">
+                <div class="hero-badge wow animate__animated animate__fadeInUp">
+                    <i class='bx bx-code-alt'></i>
+                    <span>Full-Stack Developer Portfolio</span>
                 </div>
 
-                <!-- <h1>Building <span class="gradient">Experiences</span>, One <span class="gradient">Project</span> at a
-                    Time</h1> -->
+                <h1 class="hero-title wow animate__animated animate__fadeInUp">
+                    <span class="gradient-text">Exploring</span> the universe of code,
+                    guided by <span class="gradient-text">AI</span> and <span class="gradient-text">Curiosity</span>
+                </h1>
 
-                <h1><span class="gradient">Exploring</span> new worlds with AI, one <span
-                        class="gradient">mission</span> at a time.</h1>
-
-                <p>Welcome to my portfolio! I'm a passionate full-stack developer with a knack for creating seamless and
-                    engaging web applications. Explore my work and let's connect!</p>
-
-                <button><i class="bx bx-send"></i>Contact me</button>
-            </div>
-
-            <!-- <div class="hero-vid-box">
-                <video autoplay muted loop playsinline preload="auto" src="video/hero-vid.mp4" type="video/mp4"></video>
-            </div> -->
-
-            <div class="img-box">
-                <img src="/images/pngegg.png" alt="">
-            </div>
-
-            <div class="container-2">
-                <div class="chevron"></div>
-                <div class="chevron"></div>
-                <div class="chevron"></div>
-
-            </div>
-
-
-
-        </section>
-
-        <section class="info-section">
-            <h1 class="section-title gradient">Hi there, I'm Juzer
-                Ratlam</h1>
-            <div class="info-cards ">
-                <div class="card">
-                    <img src="images/grid1.png" alt="">
-                    <h1>My Foundation</h1>
-                    <p>For over a decade, I built my career in Supply Chain Management — solving real-world problems,
-                        managing teams, and
-                        learning the value of persistence. Yet deep down, I always felt a pull toward something more
-                        creative, something that
-                        could blend logic with imagination.
-                    </p>
-                </div>
-
-                <div class="card ">
-                    <img src="images/grid2.png" alt="">
-                    <h1>A New Beginning</h1>
-                    <p>In 2023, Two years ago, I decided to listen to that inner voice. I started learning web
-                        development
-                        from scratch — late nights,
-                        countless tutorials, small wins, and lots of growth. It wasn't always easy, but every step felt
-                        right..
-                    </p>
-                </div>
-
-                <div class="card">
-                    <video autoplay muted loop playsinline src="video/glob-2.mp4" type="video/mp4"></video>
-                    <h1>Let's Connect</h1>
-                    <p>I'm a firm believer in the transformative power of collaboration and the incredible outcomes that
-                        emerge when innovative
-                        minds unite. Whether you're a fellow developer eager to create something extraordinary, a
-                        potential client with a bold
-                        vision, or simply someone who shares my enthusiasm for technology's endless possibilities, I'm
-                        excited to connect with
-                        you. Let's spark new ideas, tackle challenges together, and turn our shared passion into
-                        impactful projects. Reach out,
-                        and let's explore the opportunities that await!
-                    </p>
-
-                    <button><i class="bx bx-link-external"></i>Contact me</button>
-
-                </div>
-
-                <div class="card">
-                    <img src="images/grid4.png" alt="">
-                    <h1>Where I Am Now</h1>
-                    <p>Today, I'm a full-stack developer, and I love what I do. I thrive on challenges, whether it's
-                        crafting a user-friendly interface or optimizing backend performance. My goal? To create web
-                        applications that are not just functional but also delightful to use.
-                    </p>
-                </div>
-
-
-            </div>
-
-
-        </section>
-
-        <section class="my-projects">
-            <h1 class="section-title gradient">My Projects</h1>
-            <div class="project-card">
-                <div class="project-vidbox">
-                    <video id="projectVideo1" src="video/project-1.mp4" type="video/mp4"></video>
-
-                </div>
-                <div class="project-info">
-                    <h1>Railway Reservation System</h1>
-                    <p>This is a web-based Railway Reservation System that enables users to book and manage train
-                        reservations with
-                        real-time seat availability. Built using <b>ASP.NET Core MVC, Entity Framework Core, SQL Server,
-                            and ASP.NET Identity</b>, it
-                        features a secure login system, role-based access, and a responsive UI with <b>Razor Views and
-                            Bootstrap.</b> </p>
-
-                    <a target="_blank" href="https://github.com/jzr786/RailwayReservation-ASP.net.git"><i
-                            class="bx bx-link-external"></i>View Source-Code</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-vidbox">
-                    <video id="projectVideo2" src="video/project-2.mp4" type="video/mp4"></video>
-
-                </div>
-                <div class="project-info">
-                    <h1>SRS Electric</h1>
-                    <p>Ts project is a web-based platform for managing laboratory workflows, built with <b>Laravel
-                            (Backend) and
-                            Bootstrap/jQuery (Frontend)</b>. It features role-based dashboards, test lifecycle tracking,
-                        equipment scheduling, and
-                        automated PDF reporting. The system uses <b>MySQL</b> for data storage, <b>mPDF</b> for
-                        certificate
-                        generation, and DataTables for
-                        interactive test management..</b> </p>
-
-                    <a target="_blank"
-                        href="https://github.com/jzr786/jzr786-Laravel-SRS-Electrical-labAutomation.git"><i
-                            class="bx bx-link-external"></i>View Source-Code</a>
-                </div>
-            </div>
-
-
-            <div class="project-card">
-                <div class="project-vidbox">
-                    <video id="projectVideo3" src="video/project - 3.mp4" type="video/mp4"></video>
-
-                </div>
-                <div class="project-info">
-                    <h1>Gemini Clone using React</h1>
-                    <p>This is a web-based Gemini Clone App that allows users to interact with AI-driven conversations
-                        powered by the Google
-                        Gemini API.
-                        Built using React, Tailwind CSS, and Google Gemini API, it features a dynamic and responsive
-                        interface, real-time AI
-                        responses, and seamless user experience..</b> </p>
-
-                    <a target="_blank"
-                        href="https://github.com/jzr786/jzr786-Laravel-SRS-Electrical-labAutomation.git"><i
-                            class="bx bx-link-external"></i>View Source-Code</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="skills-section">
-
-            <h1 class="section-title gradient">Certificates</h1>
-            <div class="cert-card">
-                <div class="cert-img">
-                    <img src="images/MERN certificate.PNG" alt="certificate" onclick="openModal(this)">
-                </div>
-                <div class="cert-img">
-                    <img src="images/Prompt Certificate.PNG" alt="certificate" onclick="openModal(this)">
-                </div>
-                <div class="cert-img">
-                    <img src="images/Aptech-1.PNG" alt="certificate" onclick="openModal(this)">
-                </div>
-                <div class="cert-img">
-                    <img src="images/Aptech-2.PNG" alt="certificate" onclick="openModal(this)">
-                </div>
-                <div class="cert-img">
-                    <img src="images/AI certificate.PNG" alt="certificate" onclick="openModal(this)">
-                </div>
-            </div>
-
-
-            <div id="modal" class="modal" onclick="closeModal()">
-                <span class="close">&times;</span>
-                <img id="modalImg" class="modal-content">
-            </div>
-
-        </section>
-
-        <section class="tech-section">
-            <h1 class="section-title gradient">Technologies</h1>
-            <div class="tech-slider">
-                <div class="tech-slide-track">
-                    <div class="tech-slide"><img src="images/1.png" alt="HTML5"></div>
-                    <div class="tech-slide"><img src="images/2.png" alt="JS"></div>
-                    <div class="tech-slide"><img src="images/3.png" alt="Tailwind"></div>
-                    <div class="tech-slide"><img src="images/4.png" alt="React"></div>
-                    <div class="tech-slide"><img src="images/5.png" alt="CSS"></div>
-                    <div class="tech-slide"><img src="images/6.png" alt="NodeJs"></div>
-                    <div class="tech-slide"><img src="images/7.png" alt="Express"></div>
-                    <div class="tech-slide"><img src="images/8.png" alt="GitHub"></div>
-                    <div class="tech-slide"><img src="images/9.png" alt="SQL"></div>
-                    <div class="tech-slide"><img src="images/10.png" alt="MongoDb"></div>
-                    <div class="tech-slide"><img src="images/11.png" alt="ASP.net"></div>
-                    <div class="tech-slide"><img src="images/12.png" alt="Laravel"></div>
-                    <div class="tech-slide"><img src="images/13.png" alt="PHP"></div>
-                    <div class="tech-slide"><img src="images/14.png" alt="RestFul-API"></div>
-                </div>
-            </div>
-        </section>
-
-        <section class="contact-section wow animate__animated animate__bounceIn">
-            <h1 class="section-title gradient">Let's Talk</h1>
-
-            <div class="social-box">
-                <a href="#"><i class='bx bx-phone'></i>+92 311-2339354</a>
-                <a href="#"><i class='bx bxl-whatsapp'></i>+92 311-2339354</a>
-                <a href="#"><i class='bx bx-envelope'></i>juzerratlam@gmail.com</a>
-
-
-
-                <div class="social-icons">
-                    <a href="#"><i class='bx bxl-facebook'></i></a>
-                    <a href="#"><i class='bx bxl-instagram'></i></a>
-                    <a href="#"><i class='bx bxl-youtube'></i></a>
-                    <a href="https://github.com/jzr786?tab=repositories"><i class='bx bxl-github'></i></a>
-                    <a href="#"><i class='bx bxl-linkedin'></i></a>
-                </div>
-            </div>
-
-            <div class="contact-box wow animate__animated animate__bounceInRight">
-                <p>Whether you are looking for a new project or need help in your existing project, feel free to
-                    contact
+                <p class="hero-description wow animate__animated animate__fadeInUp">
+                    Welcome to my portfolio! I'm a passionate full-stack developer with a knack for
+                    creating seamless and engaging web applications. Explore my work and let's connect!
                 </p>
-                <form action="#" method="POST">
-                    <div class="form-group">
-                        <input type="text" name="fullname" placeholder="Full Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" placeholder="Email Address" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="input-message" placeholder="Share your thoughts">
-                    </div>
-                    <button type="submit" class="submit-btn"><i class="bx bx-send"></i>Send Message</button>
-                </form>
+
+                <div class="hero-actions wow animate__animated animate__fadeInUp">
+                    <a href="#contact" class="cta-button">
+                        <i class='bx bx-send'></i> Let's Connect
+                    </a>
+                </div>
             </div>
 
+            <div class="hero-image wow animate__animated animate__fadeInRight">
+                <img src="/images/Astro 2.png" alt="Developer illustration" loading="lazy">
+                <div class="glow-effect"></div>
+            </div>
+
+            <div class="scroll-indicator">
+
+                <div class="chevrons">
+
+                    <div class="chevron"></div>
+                    <div class="chevron"></div>
+                    <div class="chevron"></div>
+                </div>
+            </div>
         </section>
 
-        <footer>
-            <h1>Copyright © JZR Codes</h1>
-        </footer>
 
+        <section class="about-section" id="about">
+            <div class="section-header">
+                <h1 class="section-title gradient-text">Hi there, I'm Juzer
+                    Ratlam</h1>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="about-grid">
+                <!-- Card 1 -->
+                <div class="about-card" data-aos="fade-up">
+                    <div class="card-media">
+                        <img src="images/grid1.png" alt="Career foundation illustration" loading="lazy">
+                    </div>
+                    <h2 class="card-title">My Foundation</h2>
+                    <p class="card-text">For over a decade, I built my career in Supply Chain Management — solving
+                        real-world
+                        problems, managing teams, and learning the value of persistence. Yet deep down, I always felt a
+                        pull
+                        toward something more creative, something that could blend logic with imagination.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="about-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-media">
+                        <img src="images/grid2.png" alt="New beginning illustration" loading="lazy">
+                    </div>
+                    <h2 class="card-title">A New Beginning</h2>
+                    <p class="card-text">In 2023, I decided to listen to that inner voice. I started learning web
+                        development
+                        from scratch — late nights, countless tutorials, small wins, and lots of growth. It wasn't
+                        always easy,
+                        but every step felt right.</p>
+                </div>
+
+                <!-- Card 3 - Featured -->
+                <div class="about-card featured-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-media">
+                        <video autoplay muted loop playsinline>
+                            <source src="video/glob-2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-overlay"></div>
+                    </div>
+                    <h2 class="card-title">Let's Connect</h2>
+                    <p class="card-text">I'm a firm believer in the transformative power of collaboration. Whether
+                        you're a
+                        fellow developer, a potential client, or someone who shares my enthusiasm for technology, I'm
+                        excited to
+                        connect. Let's spark new ideas and turn our passion into impactful projects!</p>
+                    <a href="#contact" class="card-button">
+                        <i class='bx bx-send'></i> Let's Connect
+                    </a>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="about-card wide-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-media">
+                        <img src="images/grid4.png" alt="Current status illustration" loading="lazy">
+                    </div>
+                    <h2 class="card-title">Where I Am Now</h2>
+                    <p class="card-text">Today, I'm a full-stack developer, and I love what I do. I thrive on
+                        challenges,
+                        whether it's crafting a user-friendly interface or optimizing backend performance. My goal? To
+                        create
+                        web applications that are not just functional but also delightful to use.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="projects-section" id="projects">
+            <div class="section-header">
+                <h1 class="section-title gradient-text">My Projects</h1>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Missions accomplished — a showcase of my projects and learnings
+                </p>
+
+            </div>
+
+            <div class="projects-container">
+                <!-- Project 1 -->
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-media">
+                        <video id="projectVideo1" autoplay muted loop playsinline>
+                            <source src="video/project-1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="play-button"><i class='bx bx-play'></i></div>
+                    </div>
+                    <div class="project-content">
+                        <h2 class="project-title">Railway Reservation System</h2>
+                        <p class="project-description">This is a web-based Railway Reservation System that enables users
+                            to book
+                            and manage train reservations with real-time seat availability. Built using <strong>ASP.NET
+                                Core
+                                MVC, Entity Framework Core, SQL Server, and ASP.NET Identity</strong>, it features a
+                            secure
+                            login system, role-based access, and a responsive UI with <strong>Razor Views and
+                                Bootstrap</strong>.</p>
+                        <div class="project-tech">
+                            <span>ASP.NET Core</span>
+                            <span>Entity Framework</span>
+                            <span>SQL Server</span>
+                            <span>Bootstrap</span>
+                        </div>
+                        <a href="https://github.com/jzr786/RailwayReservation-ASP.net.git" target="_blank"
+                            class="project-link">
+                            <i class='bx bx-link-external'></i> View Source Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-media">
+                        <video id="projectVideo2" autoplay muted loop playsinline>
+                            <source src="video/project-2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="play-button"><i class='bx bx-play'></i></div>
+                    </div>
+                    <div class="project-content">
+                        <h2 class="project-title">SRS Electric</h2>
+                        <p class="project-description">This project is a web-based platform for managing laboratory
+                            workflows,
+                            built with <strong>Laravel (Backend) and Bootstrap/jQuery (Frontend)</strong>. It features
+                            role-based dashboards, test lifecycle tracking, equipment scheduling, and automated PDF
+                            reporting.
+                            The system uses <strong>MySQL</strong> for data storage, <strong>mPDF</strong> for
+                            certificate
+                            generation, and DataTables for interactive test management.</p>
+                        <div class="project-tech">
+                            <span>Laravel</span>
+                            <span>MySQL</span>
+                            <span>Bootstrap</span>
+                            <span>jQuery</span>
+                            <span>mPDF</span>
+                        </div>
+                        <a href="https://github.com/jzr786/jzr786-Laravel-SRS-Electrical-labAutomation.git"
+                            target="_blank" class="project-link">
+                            <i class='bx bx-link-external'></i> View Source Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-media">
+                        <video id="projectVideo3" autoplay muted loop playsinline>
+                            <source src="video/project - 3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="play-button"><i class='bx bx-play'></i></div>
+                    </div>
+                    <div class="project-content">
+                        <h2 class="project-title">Gemini Clone using React</h2>
+                        <p class="project-description">This is a web-based Gemini Clone App that allows users to
+                            interact with
+                            AI-driven conversations powered by the Google Gemini API. Built using <strong>React,
+                                Tailwind CSS,
+                                and Google Gemini API</strong>, it features a dynamic and responsive interface,
+                            real-time AI
+                            responses, and seamless user experience.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Tailwind CSS</span>
+                            <span>Google Gemini API</span>
+                        </div>
+                        <a href="https://github.com/jzr786/gemini-clone-reactFrontend" target="_blank"
+                            class="project-link">
+                            <i class='bx bx-link-external'></i> View Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="certificates-section" id="skills">
+            <div class="section-header">
+                <h1 class="section-title gradient-text">Certificates</h1>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">My professional achievements and completed courses</p>
+            </div>
+
+            <div class="certificates-grid">
+                <!-- Certificate 1 -->
+                <div class="certificate-card" data-aos="zoom-in">
+                    <div class="certificate-image" onclick="openModal(this)">
+                        <img src="images/MERN certificate.PNG" alt="MERN Stack Certificate" loading="lazy">
+                        <div class="certificate-overlay">
+                            <i class='bx bx-search-alt-2'></i>
+                            <span>View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="certificate-info">
+                        <h3>MERN Stack Developer</h3>
+                        <p>Full Stack Web Development Certification</p>
+                    </div>
+                </div>
+
+                <!-- Certificate 2 -->
+                <div class="certificate-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="certificate-image" onclick="openModal(this)">
+                        <img src="images/Prompt Certificate.PNG" alt="Prompt Engineering Certificate" loading="lazy">
+                        <div class="certificate-overlay">
+                            <i class='bx bx-search-alt-2'></i>
+                            <span>View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Prompt Engineering</h3>
+                        <p>AI Interaction Specialization</p>
+                    </div>
+                </div>
+
+                <!-- Certificate 3 -->
+                <div class="certificate-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="certificate-image" onclick="openModal(this)">
+                        <img src="images/Aptech-1.PNG" alt="Aptech Certificate 1" loading="lazy">
+                        <div class="certificate-overlay">
+                            <i class='bx bx-search-alt-2'></i>
+                            <span>View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Web Development</h3>
+                        <p>Aptech Certified Developer</p>
+                    </div>
+                </div>
+
+                <!-- Certificate 4 -->
+                <div class="certificate-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="certificate-image" onclick="openModal(this)">
+                        <img src="images/Aptech-2.PNG" alt="Aptech Certificate 2" loading="lazy">
+                        <div class="certificate-overlay">
+                            <i class='bx bx-search-alt-2'></i>
+                            <span>View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Advanced Programming</h3>
+                        <p>Aptech Certified Programmer</p>
+                    </div>
+                </div>
+
+                <!-- Certificate 5 -->
+                <div class="certificate-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="certificate-image" onclick="openModal(this)">
+                        <img src="images/AI certificate.PNG" alt="AI Certificate" loading="lazy">
+                        <div class="certificate-overlay">
+                            <i class='bx bx-search-alt-2'></i>
+                            <span>View Certificate</span>
+                        </div>
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Artificial Intelligence</h3>
+                        <p>AI Fundamentals Certification</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div id="certificateModal" class="certificate-modal" onclick="closeModal()">
+                <span class="close-modal" onclick="closeModal(event)">&times;</span>
+                <div class="modal-content" onclick="event.stopPropagation()">
+                    <img id="expandedCertificate" class="expanded-certificate">
+                    <div class="certificate-details">
+                        <h3 id="certificateTitle"></h3>
+                        <p id="certificateDescription"></p>
+                        <button class="close-button" onclick="closeModal(event)">
+                            <i class='bx bx-x'></i> Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="technologies-section">
+            <div class="section-header">
+                <h1 class="section-title gradient-text">Technologies I Work With</h1>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">My toolkit for building exceptional digital experiences</p>
+            </div>
+
+            <div class="tech-slider-container">
+                <div class="tech-slider">
+                    <div class="tech-slide-track">
+                        <!-- First Set -->
+                        <div class="tech-slide" data-tooltip="HTML5">
+                            <img src="images/1.png" alt="HTML5" loading="lazy">
+                        </div>
+                        <div class="tech-slide" data-tooltip="JavaScript">
+                            <img src="images/2.png" alt="JavaScript" loading="lazy">
+                        </div>
+                        <div class="tech-slide" data-tooltip="Tailwind CSS">
+                            <img src="images/3.png" alt="Tailwind CSS" loading="lazy">
+                        </div>
+                        <div class="tech-slide" data-tooltip="React">
+                            <img src="images/4.png" alt="React" loading="lazy">
+                        </div>
+                        <div class="tech-slide" data-tooltip="CSS3">
+                            <img src="images/5.png" alt="CSS3" loading="lazy">
+                        </div>
+                        <div class="tech-slide" data-tooltip="Node.js">
+                            <img src="images/6.png" alt="Node.js" loading="lazy">
+                        </div>
+                        <div class="tech-slide" data-tooltip="Express">
+                            <img src="images/7.png" alt="Express" loading="lazy">
+                        </div>
+                        <div class="tech-slide" data-tooltip="GitHub">
+                            <img src="images/8.png" alt="GitHub" loading="lazy">
+                        </div>
+                        <div class="tech-slide" data-tooltip="SQL">
+                            <img src="images/9.png" alt="SQL" loading="lazy">
+                        </div>
+                        <div class="tech-slide" data-tooltip="MongoDB">
+                            <img src="images/10.png" alt="MongoDB" loading="lazy">
+                        </div>
+                        <div class="tech-slide" data-tooltip="ASP.NET">
+                            <img src="images/11.png" alt="ASP.NET" loading="lazy">
+                        </div>
+                        <div class="tech-slide" data-tooltip="Laravel">
+                            <img src="images/12.png" alt="Laravel" loading="lazy">
+                        </div>
+                        <div class="tech-slide" data-tooltip="PHP">
+                            <img src="images/13.png" alt="PHP" loading="lazy">
+                        </div>
+                        <div class="tech-slide" data-tooltip="RESTful API">
+                            <img src="images/14.png" alt="RESTful API" loading="lazy">
+                        </div>
+
+                        <!-- Duplicate for seamless looping -->
+                        <div class="tech-slide" data-tooltip="HTML5">
+                            <img src="images/1.png" alt="HTML5" loading="lazy">
+                        </div>
+                        <div class="tech-slide" data-tooltip="JavaScript">
+                            <img src="images/2.png" alt="JavaScript" loading="lazy">
+                        </div>
+                        <div class="tech-slide" data-tooltip="Tailwind CSS">
+                            <img src="images/3.png" alt="Tailwind CSS" loading="lazy">
+                        </div>
+                        <div class="tech-slide" data-tooltip="React">
+                            <img src="images/4.png" alt="React" loading="lazy">
+                        </div>
+                        <div class="tech-slide" data-tooltip="CSS3">
+                            <img src="images/5.png" alt="CSS3" loading="lazy">
+                        </div>
+                        <div class="tech-slide" data-tooltip="Node.js">
+                            <img src="images/6.png" alt="Node.js" loading="lazy">
+                        </div>
+                        <div class="tech-slide" data-tooltip="Express">
+                            <img src="images/7.png" alt="Express" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <div class="section-header">
+                <h1 class="section-title gradient-text">Let's Talk</h1>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Get in touch for collaborations or just to say hello!</p>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-methods">
+                        <a href="tel:+923112339354" class="contact-link">
+                            <i class='bx bx-phone'></i>
+                            <span>+92 311-2339354</span>
+                        </a>
+                        <a href="https://wa.me/923112339354" target="_blank" class="contact-link">
+                            <i class='bx bxl-whatsapp'></i>
+                            <span>+92 311-2339354</span>
+                        </a>
+                        <a href="mailto:juzerratlam@gmail.com" class="contact-link">
+                            <i class='bx bx-envelope'></i>
+                            <span>juzerratlam@gmail.com</span>
+                        </a>
+                    </div>
+
+                    <div class="social-links">
+                        <p>Connect with me on social media:</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/juzerratlam/" target="_blank" aria-label="Facebook">
+                                <i class='bx bxl-facebook'></i>
+                            </a>
+                            <a href="https://www.instagram.com/juzer_ratlam/" target="_blank" aria-label="Instagram">
+                                <i class='bx bxl-instagram'></i>
+                            </a>
+                            <a href="https://www.youtube.com/@juzerratlam786" target="_blank" aria-label="YouTube">
+                                <i class='bx bxl-youtube'></i>
+                            </a>
+                            <a href="https://github.com/jzr786?tab=repositories" target="_blank" aria-label="GitHub">
+                                <i class='bx bxl-github'></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/juzerratlam/" target="_blank" aria-label="LinkedIn">
+                                <i class='bx bxl-linkedin'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contactForm" action="https://formspree.io/f/xgvkyqqz" method="POST">
+                        <div class="form-group">
+                            <input type="text" id="fullname" name="fullname" placeholder="Full Name" required>
+                            <i class='bx bx-user'></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email Address" required>
+                            <i class='bx bx-envelope'></i>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Share your thoughts" required></textarea>
+                            <i class='bx bx-message-dots'></i>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class='bx bx-send'></i>
+                            <span>Send Message</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <div class="footer-content">
+                <p>Copyright © <span id="currentYear"></span> JZR Codes. All rights reserved.</p>
+            </div>
+        </footer>
 
 
     </div>
